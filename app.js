@@ -4,8 +4,7 @@ const client = new AndromedaClient({
     rpcUrl: 'https://testnet-rpc.andromedaprotocol.io',
 });
 
-const mnemonic = 'vibrant trophy sibling heavy ordinary flame convince series era tilt misery observe
-'; // Replace with your wallet mnemonic
+const mnemonic = 'vibrant trophy sibling heavy ordinary flame convince series era tilt misery observe'; // Replace with your wallet mnemonic
 
 document.getElementById('fetchData').addEventListener('click', async () => {
     try {
