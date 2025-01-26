@@ -1,6 +1,4 @@
-const client = new AndromedaClient({
-    rpcUrl: 'https://testnet-rpc.andromedaprotocol.io',
-});
+const client = new AndromedaClient({rpcUrl: 'https://testnet-rpc.andromedaprotocol.io',});
 
 const mnemonic = 'vibrant trophy sibling heavy ordinary flame convince series era tilt misery observe'; // Replace with your wallet mnemonic
 
