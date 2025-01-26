@@ -1,5 +1,3 @@
-const { AndromedaClient } = require('@andromeda-protocol/andromeda-js');
-
 const client = new AndromedaClient({
     rpcUrl: 'https://testnet-rpc.andromedaprotocol.io',
 });
@@ -11,7 +9,7 @@ document.getElementById('fetchData').addEventListener('click', async () => {
         const wallet = await client.createWallet(mnemonic);
         console.log(`Connected to wallet address: ${wallet.address}`);
 
-        const adoAddress = 'andr10k0x64jlssupgfpxldvrsrcz97dwgqmn44av5q'; // Replace with a valid ADO address
+        const adoAddress = document.getElementById('adoAddress').value || 'andr10k0x64jlssupgfpxldvrsrcz97dwgqmn44av5q'; // Replace with a default valid ADO address
         const metadata = await client.queryAdo(adoAddress, 'metadata');
 
         document.getElementById('output').textContent = JSON.stringify(metadata, null, 2);
